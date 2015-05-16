@@ -195,7 +195,7 @@ function PANEL:SetContents( pContents )
 
 	self.Contents = pContents
 	self.Contents:SetParent( self )
-	self.Contents:Dock( FILL )
+	self.Contents:Dock( TOP ) -- Doesnt work propertly with FILL, sometimes doesnt even show..
 	self:InvalidateLayout()
 
 end
